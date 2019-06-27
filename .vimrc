@@ -1,13 +1,15 @@
 " PLUGINS
 call plug#begin()
 "misc
+Plug '907th/vim-auto-save'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'ervandew/supertab'
 Plug 'scrooloose/NERDTree'
 Plug 'w0rp/ale', { 'for': 'python' }
 "language support
 Plug 'cespare/vim-toml',                { 'for': 'toml' }
 Plug 'hashivim/vim-terraform',          { 'for': 'terraform' }
-Plug 'idris-hackers/idris-vim',         { 'for': 'idris' }
+Plug 'idris-hackers/idris-vim',         { 'for': ['idris', 'lidris'] }
 Plug 'leafgarland/typescript-vim',      { 'for': 'typescript' }
 Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'Jenkinsfile' }
 call plug#end()
