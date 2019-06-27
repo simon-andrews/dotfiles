@@ -34,7 +34,7 @@ syntax on   "enable syntax highlighting
 " NERDTREE
 noremap <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore = [ '\.pyc$' ]
-autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTREE') && b:NERDTree.isTabTree()) | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ALE LINTING
 let g:ale_linters_explicit = 1 "only use linters that have been explicitly enabled
