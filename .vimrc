@@ -36,7 +36,6 @@ syntax on   "enable syntax highlighting
 " NERDTREE
 noremap <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore = [ '\.pyc$' ]
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ALE LINTING
 let g:ale_lint_on_text_changed = 'never' "don't lint while typing (so only save, exiting insert mode, etc.)
