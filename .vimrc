@@ -2,6 +2,7 @@
 call plug#begin()
 "misc
 Plug '907th/vim-auto-save'
+Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
@@ -25,6 +26,7 @@ set tabstop=2                  "set tab display with
 
 " MISC
 set clipboard=unnamed "use system clipboard (requires +clipboard)
+set updatetime=100
 
 " SEARCH
 set ignorecase "ignore case when searching
