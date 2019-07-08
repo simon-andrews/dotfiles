@@ -12,6 +12,7 @@ Plug 'hashivim/vim-terraform',          { 'for': 'terraform' }
 Plug 'idris-hackers/idris-vim',         { 'for': ['idris', 'lidris'] }
 Plug 'leafgarland/typescript-vim',      { 'for': 'typescript' }
 Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'Jenkinsfile' }
+Plug 'neovimhaskell/haskell-vim',       { 'for': 'haskell' }
 call plug#end()
 
 " EDITING
