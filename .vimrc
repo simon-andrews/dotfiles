@@ -15,6 +15,7 @@ Plug 'idris-hackers/idris-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'pangloss/vim-javascript'
 call plug#end()
 
