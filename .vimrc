@@ -7,12 +7,12 @@ Plug 'ervandew/supertab'
 Plug 'scrooloose/NERDTree'
 Plug 'w0rp/ale', { 'for': 'python' }
 "language support
-Plug 'cespare/vim-toml',                { 'for': 'toml' }
-Plug 'hashivim/vim-terraform',          { 'for': 'terraform' }
-Plug 'idris-hackers/idris-vim',         { 'for': ['idris', 'lidris'] }
-Plug 'leafgarland/typescript-vim',      { 'for': 'typescript' }
-Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'Jenkinsfile' }
-Plug 'neovimhaskell/haskell-vim',       { 'for': 'haskell' }
+Plug 'cespare/vim-toml'
+Plug 'hashivim/vim-terraform'
+Plug 'idris-hackers/idris-vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'martinda/Jenkinsfile-vim-syntax'
+Plug 'neovimhaskell/haskell-vim'
 call plug#end()
 
 " EDITING
