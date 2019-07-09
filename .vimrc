@@ -3,7 +3,6 @@ call plug#begin()
 "misc
 Plug '907th/vim-auto-save'
 Plug 'airblade/vim-gitgutter'
-Plug 'altercation/vim-colors-solarized'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/NERDTree'
@@ -39,25 +38,11 @@ set number  "enable line numbers in left gutter
 set ruler   "show line and column numbers in bottom right
 syntax on   "enable syntax highlighting
 
-" COLORSCHEME
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
-
 " STATUSLINE
-function! StatuslineGit()
-  let l:branchname = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-  return strlen(l:branchname) > 0 ? l:branchname : ''
-endfunction
-
 set laststatus=2
 set statusline=
-set statusline+=%#CursorColumn#
-set statusline+=\ %{StatuslineGit()}
-set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%=
-set statusline+=%#CursorColumn#
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
