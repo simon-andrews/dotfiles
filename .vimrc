@@ -7,7 +7,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/NERDTree'
-Plug 'w0rp/ale', { 'for': 'python' }
+Plug 'w0rp/ale'
 "language support
 Plug 'cespare/vim-toml'
 Plug 'hashivim/vim-terraform'
@@ -53,7 +53,7 @@ endfunction
 set laststatus=2
 set statusline=
 set statusline+=%#CursorColumn#
-set statusline+=\ %{StatuslineGit()}
+"set statusline+=\ %{StatuslineGit()}
 set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%=
@@ -70,5 +70,5 @@ let NERDTreeIgnore = [ '\.pyc$' ]
 let g:ale_lint_on_text_changed = 'never' "don't lint while typing (so only save, exiting insert mode, etc.)
 let g:ale_linters_explicit = 1           "only use linters that have been explicitly enabled
 let g:ale_linters = {
-\	'python': [ 'flake8' ],
+\	'python': [ 'clangtidy', 'flake8' ],
 \}
