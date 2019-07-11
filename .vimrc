@@ -6,6 +6,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/NERDTree'
+Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale', { 'for': 'python' }
 "language support
 Plug 'cespare/vim-toml'
