@@ -5,6 +5,7 @@ Plug '907th/vim-auto-save'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
+Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/NERDTree'
 Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale', { 'for': 'python' }
@@ -39,6 +40,7 @@ set mouse=a "enable mouse usage (in all modes)
 set number  "enable line numbers in left gutter
 set ruler   "show line and column numbers in bottom right
 syntax on   "enable syntax highlighting
+colorscheme jellybeans
 
 " STATUSLINE
 set laststatus=2
