@@ -22,6 +22,7 @@ call plug#end()
 " EDITING
 set backspace=indent,eol,start "make backspace key work normally
 set expandtab                  "replace tabs with spaces
+set scrolloff=3                "how many extra lines to show at top/bottom
 set shiftwidth=2               "how many columns to indent for auto-indent
 set tabstop=2                  "set tab display with
 
