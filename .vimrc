@@ -45,7 +45,7 @@ colorscheme jellybeans
 " STATUSLINE
 set laststatus=2
 set statusline=
-set statusline+=\ %f
+set statusline+=\ %f\ %m
 set statusline+=%=
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
