@@ -3,12 +3,13 @@ call plug#begin()
 "misc
 Plug '907th/vim-auto-save'
 Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/NERDTree'
-Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
+Plug 'w0rp/ale'
 "language support
 Plug 'cespare/vim-toml'
 Plug 'hashivim/vim-terraform'
