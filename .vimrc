@@ -8,6 +8,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/NERDTree'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
 "language support
