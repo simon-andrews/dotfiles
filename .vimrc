@@ -8,18 +8,10 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/NERDTree'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
-"language support
-Plug 'cespare/vim-toml'
-Plug 'hashivim/vim-terraform'
-Plug 'idris-hackers/idris-vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'martinda/Jenkinsfile-vim-syntax'
-Plug 'neovimhaskell/haskell-vim'
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'pangloss/vim-javascript'
 call plug#end()
 
 " EDITING
