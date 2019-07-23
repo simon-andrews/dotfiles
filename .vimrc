@@ -1,6 +1,5 @@
 " PLUGINS
 call plug#begin()
-"misc
 Plug '907th/vim-auto-save'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -23,7 +22,9 @@ set tabstop=2                  "set tab display with
 
 " MISC
 set clipboard=unnamed "use system clipboard (requires +clipboard)
-set updatetime=100
+set updatetime=100    "refresh rate (in ms) for plugins
+set wildmenu          "enable fancy tab-completion menu (requires +wildmenu)
+set wildmode=full     "tab-complete to next full string
 
 " SEARCH
 set ignorecase "ignore case when searching
