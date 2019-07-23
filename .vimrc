@@ -38,13 +38,13 @@ syntax on   "enable syntax highlighting
 colorscheme jellybeans
 
 " STATUSLINE
-set laststatus=2
-set statusline=
-set statusline+=\ %f\ %m
-set statusline+=%=
-set statusline+=\ %p%%
-set statusline+=\ %l:%c
-set statusline+=\ 
+set laststatus=2          "always enable statusline on bottom of screen
+set statusline=\          "start a space
+set statusline+=%f\ %m    "add current file name (%f) and indicator for whether it's been edited since last save (%m)
+set statusline+=%=        "add separator to right-align everything else
+set statusline+=\ %p%%    "add position percentage (%p)
+set statusline+=\ %l:%c   "add current line (%l) and column (%c)
+set statusline+=\         "add one more space on the end
 
 " NERDTREE
 noremap <C-n> :NERDTreeToggle<CR>
