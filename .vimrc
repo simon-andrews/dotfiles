@@ -54,5 +54,6 @@ let NERDTreeIgnore = [ '\.pyc$' ]
 let g:ale_lint_on_text_changed = 'never' "don't lint while typing (so only save, exiting insert mode, etc.)
 let g:ale_linters_explicit = 1           "only use linters that have been explicitly enabled
 let g:ale_linters = {
-\	'python': [ 'clangtidy', 'flake8' ],
+\ 'cpp' : [ 'clangtidy' ],
+\ 'python': [ 'flake8' ],
 \}
