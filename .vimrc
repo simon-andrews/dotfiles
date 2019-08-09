@@ -5,9 +5,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/NERDTree'
-Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
@@ -16,6 +16,7 @@ call plug#end()
 " EDITING
 set backspace=indent,eol,start "make backspace key work normally
 set expandtab                  "replace tabs with spaces
+set gdefault                   "apply /g flag to search/replace by default
 set scrolloff=3                "leave 3 lines at top and bottom
 set shiftwidth=2               "how many columns to indent for auto-indent
 set tabstop=2                  "set tab display with
@@ -23,6 +24,7 @@ set tabstop=2                  "set tab display with
 " MISC
 set clipboard=unnamed "use system clipboard (requires +clipboard)
 set updatetime=100    "refresh rate (in ms) for plugins
+set noerrorbells      "disable error noises
 set wildmenu          "enable fancy tab-completion menu (requires +wildmenu)
 set wildmode=full     "tab-complete to next full string
 
@@ -31,11 +33,14 @@ set ignorecase "ignore case when searching
 set incsearch  "enable incremental search
 
 " UI/UX
-set mouse=a "enable mouse usage (in all modes)
-set number  "enable line numbers in left gutter
-set ruler   "show line and column numbers in bottom right
-syntax on   "enable syntax highlighting
-colorscheme jellybeans
+set cursorline                "highlight current line
+set listchars=tab:»\ ,trail:· "set tab to arrow followed by spaces, set trailing spaces to be represented by dot
+set list                      "enable list mode (for visualizing some invisible characters (tab, trailing space)
+set mouse=a                   "enable mouse usage (in all modes)
+set number                    "enable line numbers in left gutter
+set ruler                     "show line and column numbers in bottom right
+syntax on                     "enable syntax highlighting
+colorscheme jellybeans        "set colorscheme to Jellybeans (from plugin)
 
 " STATUSLINE
 set laststatus=2          "always enable statusline on bottom of screen
