@@ -22,11 +22,11 @@ set shiftwidth=2               "how many columns to indent for auto-indent
 set tabstop=2                  "set tab display with
 
 " MISC
-set clipboard=unnamed "use system clipboard (requires +clipboard)
-set updatetime=100    "refresh rate (in ms) for plugins
-set noerrorbells      "disable error noises
-set wildmenu          "enable fancy tab-completion menu (requires +wildmenu)
-set wildmode=full     "tab-complete to next full string
+set clipboard=unnamedplus "use system clipboard (requires +clipboard)
+set updatetime=100        "refresh rate (in ms) for plugins
+set noerrorbells          "disable error noises
+set wildmenu              "enable fancy tab-completion menu (requires +wildmenu)
+set wildmode=full         "tab-complete to next full string
 
 " SEARCH
 set ignorecase "ignore case when searching
