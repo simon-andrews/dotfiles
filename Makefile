@@ -1,7 +1,7 @@
-all: tmux vim
+all: tmux nvim
 
-vim: $(HOME)/.vimrc
-$(HOME)/.vimrc:
+nvim: $(HOME)/.config/nvim/init.vim
+$(HOME)/.config/nvim/init.vim:
 	mkdir -p $(HOME)/.config/nvim
 	ln -s $(shell pwd)/.config/nvim/init.vim $(HOME)/.config/nvim/init.vim
 
