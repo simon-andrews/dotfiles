@@ -7,7 +7,16 @@ alias ls='ls --color=auto'
 alias objdump='objdump -M intel'
 alias vim='echo "Use nvim instead!"'
 
-PS1='[\W]\$ '
+function __git_branch_ps1 {
+  branch_name="$(git symbolic-ref --short HEAD 2> /dev/null)"
+  if [ "$?" -eq 0 ]; then
+    echo " ($branch_name)"
+  else
+    echo ""
+  fi
+}
+
+PS1='[\W]$(__git_branch_ps1) \$ '
 # where
 #  \W is name of current directory
 #  \$ is $
