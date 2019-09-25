@@ -1,8 +1,10 @@
 all: bash nvim readline tmux
 
-bash: $(HOME)/.bashrc
+bash: $(HOME)/.bashrc $(HOME)/.bash_profile
 $(HOME)/.bashrc:
 	ln -s $(shell pwd)/.bashrc $(HOME)/.bashrc
+$(HOME)/.bash_profile:
+	ln -s $(shell pwd)/.bash_profile $(HOME)/.bash_profile
 
 nvim: $(HOME)/.config/nvim/init.vim
 $(HOME)/.config/nvim/init.vim:
