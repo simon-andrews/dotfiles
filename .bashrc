@@ -34,5 +34,6 @@ eval "$(pyenv virtualenv-init -)"
 export PROMPT_COMMAND="$OLD_PROMPT_COMMAND"
 
 # Path stuff
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
