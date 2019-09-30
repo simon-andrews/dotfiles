@@ -5,7 +5,7 @@ define addfilefor
 	fi
 endef
 
-all: bash nvim readline tmux
+all: bash nvim readline redshift tmux
 
 bash: $(HOME)/.bashrc $(HOME)/.bash_profile
 $(HOME)/.bashrc:
@@ -21,6 +21,10 @@ $(HOME)/.config/nvim/init.vim:
 readline: $(HOME)/.inputrc
 $(HOME)/.inputrc:
 	$(call addfilefor,bash,.inputrc)
+
+redshift: $(HOME)/.config/redshift/redshift.conf
+$(HOME)/.config/redshift/redshift.conf:
+	$(call addfilefor,redshift,.config/redshift/redshift.conf)
 
 tmux: $(HOME)/.tmux.conf
 $(HOME)/.tmux.conf:
