@@ -30,4 +30,4 @@ tmux: $(HOME)/.tmux.conf
 $(HOME)/.tmux.conf:
 	$(call addfilefor,tmux,.tmux.conf)
 
-.PHONY: all bash nvim readline tmux
+.PHONY: all bash nvim readline redshift tmux
