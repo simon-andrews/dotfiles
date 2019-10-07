@@ -5,7 +5,7 @@ define addfilefor
 	fi
 endef
 
-all: bash nvim readline redshift tmux
+all: bash nvim readline redshift tmux x
 
 bash: $(HOME)/.bashrc $(HOME)/.bash_profile
 $(HOME)/.bashrc:
@@ -30,4 +30,10 @@ tmux: $(HOME)/.tmux.conf
 $(HOME)/.tmux.conf:
 	$(call addfilefor,tmux,.tmux.conf)
 
-.PHONY: all bash nvim readline redshift tmux
+x: $(HOME)/.Xresources $(HOME)/.xinitrc
+$(HOME)/.Xresources:
+	$(call addfilefor,startx,.Xresources)
+$(HOME)/.xinitrc:
+	$(call addfilefor,startx,.xinitrc)
+
+.PHONY: all bash nvim readline redshift tmux x

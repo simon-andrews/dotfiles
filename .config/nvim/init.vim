@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
+Plug 'Firef0x/PKGBUILD.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/NERDTree'
