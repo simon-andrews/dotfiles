@@ -32,8 +32,17 @@ eval "$(pyenv init -)"
 OLD_PROMPT_COMMAND="$PROMPT_COMMAND"
 eval "$(pyenv virtualenv-init -)"
 export PROMPT_COMMAND="$OLD_PROMPT_COMMAND"
+unset OLD_PROMPT_COMMAND
+
+# Opam
+eval "$(opam env)"
+
+# Go
+export GOPATH="$HOME/software"
 
 # Path stuff
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"

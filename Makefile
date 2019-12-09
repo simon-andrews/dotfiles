@@ -5,13 +5,17 @@ define addfilefor
 	fi
 endef
 
-all: bash nvim readline redshift tmux x
+all: bash npm nvim readline redshift tmux x
 
 bash: $(HOME)/.bashrc $(HOME)/.bash_profile
 $(HOME)/.bashrc:
 	$(call addfilefor,bash,.bashrc)
 $(HOME)/.bash_profile:
 	$(call addfilefor,bash,.bash_profile)
+
+npm: $(HOME)/.npmrc
+$(HOME)/.npmrc:
+	$(call addfilefor,npm,.npmrc)
 
 nvim: $(HOME)/.config/nvim/init.vim
 $(HOME)/.config/nvim/init.vim:
@@ -30,10 +34,8 @@ tmux: $(HOME)/.tmux.conf
 $(HOME)/.tmux.conf:
 	$(call addfilefor,tmux,.tmux.conf)
 
-x: $(HOME)/.Xresources $(HOME)/.xinitrc
-$(HOME)/.Xresources:
-	$(call addfilefor,startx,.Xresources)
+x: $(HOME)/.xinitrc
 $(HOME)/.xinitrc:
 	$(call addfilefor,startx,.xinitrc)
 
-.PHONY: all bash nvim readline redshift tmux x
+.PHONY: all bash npm nvim readline redshift tmux x
